@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid rgba(51, 51, 51, 0.3);
+    border-top: 1px solid rgba(51, 51, 51, 0.3);
+    margin-bottom: 3em;
+}
+
+.fields > div {
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid rgba(51, 51, 51, 0.3);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.fields > div[data-game = 'fruit'] {
+    background-color: #ff2121;
+}
+
+.fields > div[data-game = 'snake'] {
+    background-color: #fff909;
+}
+
+.fields > div[data-game = 'wall'] {
+    background-color: #555;
+}
+
+#score {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+}
